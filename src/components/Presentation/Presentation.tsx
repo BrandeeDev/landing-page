@@ -5,7 +5,7 @@ import Picture from "./Picture";
 
 const Presentation=()=>{
     return(
-      <div className="  flex flex-col  items-start  mt-[38px] sm: mt-[99px]  sm:max-w-[398px]">
+      <div className="  flex flex-col  items-start  mt-[38px] sm:mt-[99px] ">
           <Title />
           <Introduction />
          <GetStarted />
