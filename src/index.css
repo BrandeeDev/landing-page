@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .skilled{
+        @apply font-plus_jakarta_s font-extrabold text-[28px] text-left align-top text-skilled_col ;
+        line-height: 35px
+
+    }
+    .btn-text{
+        @apply font-plus_jakarta_s  font-bold text-base text-left align-top text-white;
+    }
+    .title{
+        @apply font-plus_jakarta_s font-extrabold text-left align-top text-[#13183F] ;
+        font-size: 40px;
+        line-height:50px  ;
+
+    }
+    .introduction {
+@apply font-plus_jakarta_s font-medium text-base text-left align-top text-[#83869A] ;
+        line-height:26px ;
+    }
+    .box-title {
+        @apply font-plus_jakarta_s font-extrabold text-2xl  leading-8 text-left align-top text-white;
+    }
+
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+

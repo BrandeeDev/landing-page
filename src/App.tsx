@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import Main from './UI/Main';
+import Section from "./UI/Section";
+import Header from "./components/Header";
+import Title from "./components/Presentation/Title";
+import Introduction from "./components/Presentation/Introduction";
+import GetStarted from "./components/Presentation/GetStarted";
+import Picture from "./components/Presentation/Picture";
+import CategoriesBox from "./components/Category/CategoriesBox";
+import Footer from "./components/Footer";
+import Presentation from "./components/Presentation/Presentation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Fragment>
+
+          <Main>
+              <Header />
+              <Section>
+
+
+                  <Presentation />
+                  <Picture />
+                  <CategoriesBox />
+              </Section>
+              <Footer />
+
+          </Main>
+
+
+      </Fragment>
   );
 }
 
